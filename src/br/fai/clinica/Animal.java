@@ -4,7 +4,17 @@ public abstract class Animal {
 
 	public static void main(String[] args) {
 		
-		String nome = "XXX";
+		public void nomeAnimal() {
+			
+		}
+		
+		public void idAnimal() {
+			
+		}
+		
+		private String nome = "XXX";
+		private int id = "xxx";
+		
 
 	}
 
