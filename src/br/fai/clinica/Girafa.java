@@ -2,8 +2,8 @@ package br.fai.clinica;
 
 public class Girafa extends Animal{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public Girafa(String nome) {
+		setNome(nome);
 
 	}
 

@@ -1,5 +1,9 @@
 package br.fai.clinica;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -66,22 +70,43 @@ public class Main {
 	
 	public void cadastrarCavalo() {
 		
+		Cavalo primeiroCavalo = new Cavalo("Pano");
+		
+		List<Cavalo>listaDeCavalos = new ArrayList<Cavalo>();
+		listaDeCavalos.add(primeiroCavalo);
+		
+		if(listaDeCavalos.isEmpty()) {
+			System.out.println("Falha!");
+		}else {
+			System.out.println("O cavalo foi inserido com sucesso!");
+		}
 	}
 	
 	public void cadastrarGirafa() {
+		Girafa primeiraGirafa = new Girafa("Gigi");
 		
+		List<Girafa>listaDeGirafas = new ArrayList<Girafa>();
+		listaDeGirafas.add(primeiraGirafa);
+		
+		if(listaDeGirafas.isEmpty()) {
+			System.out.println("Falha!");
+		}else {
+			System.out.println("A Girafa foi inserido com sucesso!");
+		}
 	}
 	
     public void listarCavalos() {
+    	
+    	Map<Integer,String> Cavalo = new HashMap<>();
 		
 	}
     
     public void listarGirafas() {
-		
+    	Map<Integer,String> Girafa = new HashMap<>();
 	}
     
     public void listarAnimais() {
-		
+    	
 	}
     
     public void removerPorId() {
